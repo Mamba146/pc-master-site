@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mamba146.github.io/pc-master-site/sitemap.xml
