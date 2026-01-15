@@ -10,11 +10,11 @@ body {
     color: #e6e6e6;
     line-height: 1.5;
 
-    /* ÐÐ»Ð°Ð²Ð½Ð¾Ðµ Ð¿Ð¾ÑÐ²Ð»ÐµÐ½Ð¸Ðµ ÑÑÑÐ°Ð½Ð¸ÑÑ */
+    /* Плавное появление страницы */
     opacity: 0;
     animation: fadePage 1.5s ease forwards;
 
-    /* ÐÐ½Ð¸Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð½ÑÐ¹ ÑÐ¾Ð½ */
+    /* Анимированный фон */
     background: linear-gradient(270deg, #3498db, #2ecc71, #9b59b6);
     background-size: 600% 600%;
     animation: gradientMove 15s ease infinite, fadePage 1.5s ease forwards;
@@ -159,11 +159,11 @@ img {
     justify-content: center;
     padding: 0 16px;
 
-    /* ÐÑÐ°ÑÐ¸Ð²Ð¾Ðµ Ð·Ð°ÑÐµÐ¼Ð½ÐµÐ½Ð¸Ðµ */
+    /* Красивое затемнение */
     background: rgba(0,0,0,0.35);
     backdrop-filter: blur(4px);
 
-    /* ÐÑÐ³ÐºÐ¾Ðµ ÑÐ¸ÑÐ½Ð¸Ðµ */
+    /* Мягкое сияние */
     box-shadow: inset 0 0 120px rgba(0,0,0,0.6);
 }
 
@@ -221,7 +221,7 @@ img {
     transform: translateZ(0);
 }
 
-/* ====== ÐÐÐÐÐÐÐÐ¯ ÐÐÐÐ¡ÐÐÐ¢ÐÐ ====== */
+/* ====== НЕОНОВАЯ ПОДСВЕТКА ====== */
 
 .btn:hover {
     transform: scale(1.06);
@@ -251,7 +251,7 @@ img {
     border-color: rgba(255,204,0,1);
 }
 
-/* ====== ÐÐ ÐÐÐÐÐÐ¢ÐÐ«Ð ÐÐÐÐ ====== */
+/* ====== ГРАДИЕНТНЫЙ БЛИК ====== */
 
 .btn::before {
     content: "";
@@ -274,7 +274,7 @@ img {
     left: 120%;
 }
 
-/* ====== ÐÐÐÐÐÐ¢ÐÐ«Ð Ð­Ð¤Ð¤ÐÐÐ¢ ====== */
+/* ====== МАГНИТНЫЙ ЭФФЕКТ ====== */
 
 .btn.magnet {
     transition: transform 0.15s ease-out;
@@ -302,7 +302,7 @@ img {
     text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
-/* ====== ÐÐÐÐÐÐ¦ÐÐ¯ ÐÐÐ Ð¢ÐÐ§ÐÐ ÐÐ Ð ÐÐ ÐÐÐ Ð£Ð¢ÐÐ ====== */
+/* ====== АНИМАЦИЯ КАРТОЧЕК ПРИ ПРОКРУТКЕ ====== */
 
 .card {
     background: #161616;
@@ -443,4 +443,21 @@ img {
 
 /* ====== RESPONSIVE ====== */
 
-@media (m
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(0,0,0,0.95);
+        padding: 10px;
+        border-radius: 8px;
+        gap: 10px;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}
