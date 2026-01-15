@@ -265,7 +265,12 @@ img {
 
 .icon {
     font-size: 20px;
-    margin-bottom: 8px;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ====== GALLERY ====== */
