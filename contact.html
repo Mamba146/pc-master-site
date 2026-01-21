@@ -68,13 +68,15 @@ h2 {
 <div class="container">
     <h2>Связаться со мной</h2>
 
-    <form action="send.php" method="POST" class="contact-form">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="4a94a7a3-a838-4de1-ac99-f9fd2d09fa80">
         <input type="text" name="name" placeholder="Ваше имя" required>
         <input type="email" name="email" placeholder="Ваш email" required>
         <input type="tel" name="phone" placeholder="Ваш телефон" required>
         <textarea name="message" placeholder="Ваше сообщение" required></textarea>
         <button type="submit">Отправить</button>
     </form>
+
 </div>
 
 </body>
