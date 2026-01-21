@@ -1,8 +1,81 @@
-<form action="send.php" method="POST" class="contact-form"></form>
-    <input type="text" name="name" placeholder="Nom" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="tel" name="phone" placeholder="Phone" required>
-    <textarea name="message" placeholder="Message" required></textarea>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Связаться со мной</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
-</form>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #1f8f6d;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 14px;
+    background: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-form button:hover {
+    background: #003399;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Связаться со мной</h2>
+
+    <form action="send.php" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+</body>
+</html>
