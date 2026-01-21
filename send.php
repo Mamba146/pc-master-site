@@ -1,9 +1,7 @@
-
 <?php
-echo "Форма принята. Имя: " . $_POST['name'];
-exit;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 require 'phpmailer/Exception.php';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -12,10 +10,10 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
+    $mail->Host       = 'smtp-relay.brevo.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'avdoev@gmail.com';
-    $mail->Password   = 'xbxeeucebowckykp'; // пароль приложения без пробелов
+    $mail->Username   = 'a08a83001e@smtp-relay.brevo.com';
+    $mail->Password   = 'arWzzHXBpkyqSSBh';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
@@ -34,5 +32,5 @@ try {
     exit;
 
 } catch (Exception $e) {
-    echo "Ошибка отправки: {$mail->ErrorInfo}";
+    echo "Ошибка SMTP: " . $mail->ErrorInfo;
 }
