@@ -3,11 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC MASTER NICE</title>
+    <title>Ремонт компьютеров в Ницце — PC Master Nice</title>
 
-    
-<script data-goatcounter="https://stats.pcmasternice.fr/count"
-        async src="https://stats.pcmasternice.fr/count.js"></script>
+    <!-- SEO -->
+    <meta name="description" content="Ремонт компьютеров в Ницце. Настройка Windows и macOS, ремонт ноутбуков, удаление вирусов, настройка Wi‑Fi. Выезд мастера по Ницце и пригородам. Быстро, надёжно, с гарантией.">
+    <meta name="keywords" content="ремонт компьютеров Ницца, dépannage informatique Nice, ремонт ноутбуков Nice, установка Windows Nice, настройка WiFi Nice, компьютерный мастер Ницца, pc repair nice, mac repair nice">
+    <meta name="author" content="PC Master Nice">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Ремонт компьютеров в Ницце — PC Master Nice">
+    <meta property="og:description" content="Профессиональный ремонт компьютеров и ноутбуков в Ницце. Настройка Windows и macOS, Wi‑Fi, удаление вирусов. Выезд мастера.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="PC Master Nice">
+
+    <!-- ===================== SCHEMA.ORG ===================== -->
+
+    <!-- LOCAL BUSINESS -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "PC Master Nice",
+      "image": "https://pcmasternice.fr/assets/images/logo.png",
+      "url": "https://pcmasternice.fr/",
+      "telephone": "+33631136410",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nice",
+        "addressRegion": "Provence-Alpes-Côte d’Azur",
+        "addressCountry": "FR"
+      },
+      "description": "Dépannage informatique à Nice. Ремонт компьютеров и ноутбуков, установка Windows, удаление вирусов, настройка Wi‑Fi, IT support.",
+      "priceRange": "€€",
+      "areaServed": "Nice",
+      "openingHours": "Mo-Su 08:00-22:00"
+    }
+    </script>
+
+    <!-- SERVICES -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Dépannage informatique, Réparation ordinateur, IT Support",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "PC Master Nice",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nice",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Nice"
+      },
+      "description": "Réparation PC, ремонт ноутбуков, установка Windows, удаление вирусов, настройка Wi‑Fi, восстановление данных."
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Почему компьютер работает медленно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще всего причина — перегрев, вирусы, старый HDD или перегруженный автозапуск. Мы проводим диагностику и ускоряем систему."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte une réparation PC à Nice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le prix dépend du problème. Diagnostic rapide, installation Windows, suppression virus, remplacement SSD — devis gratuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a laptop repair take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most repairs take from 1 to 24 hours depending on the issue. Fast service available in Nice."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- BREADCRUMBS -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://pcmasternice.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://pcmasternice.fr/#services"
+        }
+      ]
+    }
+    </script>
+
+    <!-- CONTACT -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPoint",
+      "telephone": "+33631136410",
+      "contactType": "customer service",
+      "areaServed": "FR",
+      "availableLanguage": ["French", "Russian", "English"]
+    }
+    </script>
+
+    <!-- ===================== END SCHEMA.ORG ===================== -->
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,8 +150,10 @@
                 <button type="button" data-lang-btn="fr">FR</button>
             </div>
 
-            <button class="burger" id="burger" type="button">
-                <span></span><span></span><span></span>
+            <button class="burger" id="burger" type="button" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
 
@@ -40,28 +167,27 @@
 </header>
 
 <main>
-
-    <!-- HERO -->
     <section class="hero">
         <div class="hero-inner">
             <h1 data-lang="hero_title">Профессиональный ремонт компьютеров в Ницце</h1>
-            <p data-lang="hero_sub">Ремонт компьютеров в Ницце. Выезд мастера, диагностика, настройка Windows и macOS.</p>
+
+            <p data-lang="hero_sub">
+                Ремонт компьютеров в Ницце. Выезд мастера, диагностика, настройка Windows и macOS.
+            </p>
 
             <div class="buttons">
-                <a class="btn magnet" href="tel:+33631136410" data-lang="btn_call">Позвонить</a>
+                <a class="btn magnet" href="tel:+3363136410">Tel</a>
                 <a class="btn whatsapp magnet" href="https://wa.me/33631136410">WhatsApp</a>
                 <a class="btn email magnet" href="mailto:avdoev@yahoo.com">Email</a>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES -->
     <section id="services" class="section services">
         <div class="section-inner">
             <h2 data-lang="services_title">Компьютерная помощь и ремонт в Ницце</h2>
 
             <div class="cards">
-
                 <div class="card">
                     <div class="icon">🪟</div>
                     <h3 data-lang="service1_title">Переустановка Windows</h3>
@@ -97,12 +223,10 @@
                     <h3 data-lang="service6_title">Дополнительные услуги</h3>
                     <p data-lang="service6_desc">Восстановление данных, ремонт БП и HDD, сборка ПК, установка ПО.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- GALLERY -->
     <section id="gallery" class="section gallery">
         <div class="section-inner">
             <h2 data-lang="gallery_title">Галерея работ</h2>
@@ -120,32 +244,39 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section about">
         <div class="section-inner">
             <h2 data-lang="about_title">Обо мне</h2>
+
             <p data-lang="about_text">
-                Более 7 лет занимаюсь ремонтом компьютеров и ноутбуков в Ницце. Помогаю с установкой Windows и macOS, настройкой Wi‑Fi, удалением вирусов, восстановлением данных и решением любых проблем с техникой.
+                Более 7 лет занимаюсь ремонтом компьютеров и ноутбуков в Ницце. 
+                Помогаю с установкой Windows и macOS, настройкой Wi‑Fi, удалением вирусов, 
+                восстановлением данных и решением любых проблем с техникой. 
+                Работаю по всей Ницце и ближайшим районам, приезжаю быстро, 
+                объясняю понятным языком и даю гарантию на выполненные работы.
             </p>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <form id="contact-form" class="contact-form" action="https://formsubmit.co/avdoev@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Nom" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="tel" name="phone" placeholder="phone" required>
-    <textarea name="message" placeholder="message"></textarea>
+    <section id="contact" class="section contact">
+        <div class="section-inner">
+            <h2 data-lang="contact_title">Связаться со мной</h2>
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://pcmasternice.fr/merci.html">
+            <p class="location">Работаю в Ницце и пригородах: Saint-Laurent-du-Var, Cagnes-sur-Mer, Villefranche-sur-Mer.</p>
 
-    <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
-</form>
+            <form class="contact-form" action="https://formsubmit.co/avdoev@yahoo.com" method="POST">
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="phone" required>
+                <textarea name="message" placeholder="message"></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
+            </form>
         </div>
     </section>
-
 </main>
 
 <footer class="footer">
@@ -154,7 +285,7 @@
     </div>
 </footer>
 
-<!-- LIGHTBOX -->
+<!-- Лайтбокс -->
 <div class="lightbox" id="lightbox">
     <div class="lightbox-inner">
         <button class="lightbox-close" id="lightboxClose" type="button">×</button>
@@ -162,20 +293,21 @@
     </div>
 </div>
 
-<!-- JAVASCRIPT -->
 <script>
-/* === ЯЗЫК === */
 const langData = {
     ru: {
         nav_services: "Услуги",
         nav_gallery: "Галерея",
         nav_about: "Обо мне",
         nav_contact: "Контакты",
+
         hero_title: "Профессиональный ремонт компьютеров в Ницце",
         hero_sub: "Ремонт компьютеров в Ницце. Выезд мастера, диагностика, настройка Windows и macOS.",
         btn_call: "Позвонить",
         btn_send: "Отправить",
+
         services_title: "Компьютерная помощь и ремонт в Ницце",
+
         service1_title: "Переустановка Windows",
         service1_desc: "Установка Windows 7/8/10/11, настройка, оптимизация.",
         service2_title: "Установка macOS",
@@ -188,21 +320,28 @@ const langData = {
         service5_desc: "Wi‑Fi, интернет, сетевое оборудование.",
         service6_title: "Дополнительные услуги",
         service6_desc: "Восстановление данных, ремонт БП и HDD, сборка ПК, установка ПО.",
+
         gallery_title: "Галерея работ",
+
         about_title: "Обо мне",
-        about_text: "Более 7 лет занимаюсь ремонтом компьютеров и ноутбуков в Ницце.",
+        about_text: "Более 7 лет занимаюсь ремонтом компьютеров и ноутбуков в Ницце. Помогаю с установкой Windows и macOS, настройкой Wi‑Fi, удалением вирусов, восстановлением данных и решением любых проблем с техникой. Работаю по всей Ницце и ближайшим районам, приезжаю быстро, объясняю понятным языком и даю гарантию на выполненные работы.",
+
         contact_title: "Связаться со мной"
     },
+
     en: {
         nav_services: "Services",
         nav_gallery: "Gallery",
         nav_about: "About",
         nav_contact: "Contact",
+
         hero_title: "Professional computer repair in Nice",
         hero_sub: "Computer repair in Nice. On‑site service, diagnostics, Windows and macOS setup.",
         btn_call: "Call",
         btn_send: "Send",
+
         services_title: "Computer repair and IT help in Nice",
+
         service1_title: "Windows installation",
         service1_desc: "Windows 7/8/10/11 installation, setup and optimization.",
         service2_title: "macOS installation",
@@ -215,21 +354,28 @@ const langData = {
         service5_desc: "Wi‑Fi, internet and network equipment.",
         service6_title: "Additional services",
         service6_desc: "Data recovery, PSU & HDD repair, PC assembly, software installation.",
+
         gallery_title: "Work gallery",
+
         about_title: "About me",
-        about_text: "I have been repairing computers and laptops in Nice for more than 7 years.",
+        about_text: "I have been repairing computers and laptops in Nice for more than 7 years. Windows and macOS installation, Wi‑Fi setup, virus removal, data recovery and full technical support. Fast arrival across Nice and nearby areas.",
+
         contact_title: "Contact me"
     },
+
     fr: {
         nav_services: "Services",
         nav_gallery: "Galerie",
         nav_about: "À propos",
         nav_contact: "Contact",
+
         hero_title: "Dépannage informatique à Nice",
         hero_sub: "Réparation PC à Nice. Intervention rapide, diagnostic, installation Windows et macOS.",
         btn_call: "Appeler",
         btn_send: "Envoyer",
+
         services_title: "Dépannage informatique et réparation à Nice",
+
         service1_title: "Installation de Windows",
         service1_desc: "Installation de Windows 7/8/10/11, configuration et optimisation.",
         service2_title: "Installation de macOS",
@@ -242,72 +388,8 @@ const langData = {
         service5_desc: "Wi‑Fi, internet et équipement réseau.",
         service6_title: "Services supplémentaires",
         service6_desc: "Récupération de données, réparation PSU et HDD, assemblage PC, installation de logiciels.",
+
         gallery_title: "Galerie de travaux",
+
         about_title: "À propos de moi",
-        about_text: "Je répare des ordinateurs et des ordinateurs portables à Nice depuis plus de 7 ans.",
-        contact_title: "Contactez-moi"
-    }
-};
-
-function setLang(lang) {
-    const dict = langData[lang];
-    if (!dict) return;
-    document.querySelectorAll("[data-lang]").forEach(el => {
-        const key = el.getAttribute("data-lang");
-        if (dict[key]) el.textContent = dict[key];
-    });
-}
-
-document.querySelectorAll("[data-lang-btn]").forEach(btn => {
-    btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang-btn")));
-});
-
-/* === БУРГЕР === */
-const burger = document.getElementById("burger");
-const navMenu = document.getElementById("navMenu");
-
-burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    navMenu.classList.toggle("open");
-});
-
-/* === ЛАЙТБОКС === */
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightboxImg");
-const lightboxClose = document.getElementById("lightboxClose");
-
-document.querySelectorAll(".photo").forEach(photo => {
-    photo.addEventListener("click", () => {
-        lightboxImg.src = photo.getAttribute("data-large");
-        lightbox.classList.add("open");
-    });
-});
-
-lightboxClose.addEventListener("click", () => {
-    lightbox.classList.remove("open");
-    lightboxImg.src = "";
-});
-
-lightbox.addEventListener("click", e => {
-    if (e.target === lightbox) {
-        lightbox.classList.remove("open");
-        lightboxImg.src = "";
-    }
-});
-
-/* === АНИМАЦИЯ КАРТОЧЕК === */
-const cards = document.querySelectorAll('.card');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.2 });
-
-cards.forEach(card => observer.observe(card));
-</script>
-
-</body>
-</html>
+        about_text: "Je répare des ordinateurs et des ordinateurs portables à Nice depuis plus de 7 ans. Installation Windows
