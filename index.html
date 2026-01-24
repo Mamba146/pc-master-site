@@ -136,7 +136,6 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="header">
@@ -292,8 +291,8 @@
         <img id="lightboxImg" src="" alt="preview">
     </div>
 </div>
-
 <script>
+// ===================== ЯЗЫКИ =====================
 const langData = {
     ru: {
         nav_services: "Услуги",
@@ -392,4 +391,83 @@ const langData = {
         gallery_title: "Galerie de travaux",
 
         about_title: "À propos de moi",
-        about_text: "Je répare des ordinateurs et des ordinateurs portables à Nice depuis plus de 7 ans. Installation Windows
+        about_text: "Je répare des ordinateurs et des ordinateurs portables à Nice depuis plus de 7 ans. Installation Windows et macOS, configuration Wi‑Fi, suppression de virus, récupération de données. Intervention rapide sur Nice et les environs.",
+
+        contact_title: "Contactez-moi"
+    }
+};
+
+function setLang(lang) {
+    const dict = langData[lang];
+    if (!dict) return;
+    document.querySelectorAll("[data-lang]").forEach(el => {
+        const key = el.getAttribute("data-lang");
+        if (dict[key]) el.textContent = dict[key];
+    });
+}
+
+document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang-btn");
+        setLang(lang);
+    });
+});
+
+// ===================== БУРГЕР =====================
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("navMenu");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("open");
+});
+
+navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        burger.classList.remove("active");
+    });
+});
+
+// ===================== ЛАЙТБОКС =====================
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxClose = document.getElementById("lightboxClose");
+
+document.querySelectorAll(".photo").forEach(photo => {
+    photo.addEventListener("click", () => {
+        const src = photo.getAttribute("data-large");
+        lightboxImg.src = src;
+        lightbox.classList.add("open");
+    });
+});
+
+lightboxClose.addEventListener("click", () => {
+    lightbox.classList.remove("open");
+    lightboxImg.src = "";
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove("open");
+        lightboxImg.src = "";
+    }
+});
+
+// ===================== МАГНИТ-КНОПКИ (исправлено) =====================
+document.querySelectorAll('.magnet').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = translate(${x * 0.15}px, ${y * 0.15}px) scale(1.1);
+    });
+
+    btn.addEventListener('mouseleave', () => {
+        btn.style.transform = "translate(0, 0) scale(1)";
+    });
+});
+</script>
+
+</body>
+</html>
