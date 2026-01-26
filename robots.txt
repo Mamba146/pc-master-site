@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://pcmasternice.fr/sitemap.xml
+Disallow: /
